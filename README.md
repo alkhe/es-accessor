@@ -82,6 +82,10 @@ const fn = function() {
 }
 ```
 
+# Syntax
+
+*WIP*
+
 # Notes
 
 The format for this document was taken from [wycats/javascript-decorators](https://github.com/wycats/javascript-decorators).
