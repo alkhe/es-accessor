@@ -44,7 +44,7 @@ const fn = a => a.x;
 
 Naive (ES5)
 ```js
-const fn = function(a) {
+var fn = function(a) {
   return a.x;
 };
 ```
@@ -70,7 +70,7 @@ const fn = a => a.x['123'].y;
 
 Naive (ES5)
 ```js
-const fn = function(a) {
+var fn = function(a) {
   return a.x['123'].y;
 };
 ```
