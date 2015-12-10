@@ -6,7 +6,7 @@ Accessors reduce code redundancy and streamline various aspects of functional pr
 
 An accessor is syntactic sugar for retrieving object properties, taking the form of `.a.b.c`.
 
-Many functional programming libraries (e.g. RxJS, Lodash, Ramda, fnjs, bilby) include a `pluck('key')` function on their primitives' prototypes as an alternative for `map(x => x.key)`. Others, such as Redux, rely heavily on *selectors*, functions that often take the shape of `x => x.child`. With an accessor, this could be reduced to simply `.child`.
+Many functional programming libraries (e.g. RxJS, Lodash, Ramda, fnjs, bilby) include a `pluck('key')` function on their primitives' prototypes as an alternative for `map(x => x.key)`. With accessors, `pluck` would be unnecessary. Many data-oriented libraries, like Redux, rely heavily on *selectors*, functions that often take the shape of `x => x.child`. With an accessor, this could be reduced to simply `.child`.
 
 Consider `x => x.property`: the intent is to create a function that retrieves the value `property` on arbitrary data. The expression therefore contains extraneous code (`x => x`) and thus introduces more cognitive load.
 
