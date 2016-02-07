@@ -44,19 +44,19 @@ Accessor
 const fn = .x;
 ```
 
-Naive (ES6)
+ES6
 ```js
 const fn = a => a.x;
 ```
 
-Naive (ES5)
+ES5
 ```js
 var fn = function(a) {
   return a.x;
 };
 ```
 
-Strict
+ES5, Strict
 ```js
 const fn = function() {
   return arguments[0].x;
@@ -70,19 +70,19 @@ Accessor
 const fn = .x['123'].y;
 ```
 
-Naive (ES6)
+ES6
 ```js
 const fn = a => a.x['123'].y;
 ```
 
-Naive (ES5)
+ES5
 ```js
 var fn = function(a) {
   return a.x['123'].y;
 };
 ```
 
-Strict
+ES5, Strict
 ```js
 const fn = function() {
   return arguments[0].x['123'].y;
