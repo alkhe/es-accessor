@@ -10,7 +10,14 @@ Many functional programming libraries (e.g. RxJS, Lodash, Ramda, fnjs, bilby) in
 
 Consider `x => x.property`: the intent is to create a function that retrieves the value `property` on arbitrary data. The expression therefore contains extraneous code (`x => x`) and thus introduces more cognitive load.
 
-Other functional programming languages, like Clojure, have this feature.
+Other functional programming languages, like Haskell and Clojure, have this feature.
+
+```hs
+> data Person = Person { name :: String, age :: Int }
+> let john = Person "John Smith" 35
+> age john
+35
+```
 
 ```clj
 (def person { :name "John" :age 32 }) ; #'ns/person
